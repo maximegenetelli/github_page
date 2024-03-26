@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Haut de page / page d'accueil */
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+header nav li {
+    height: fit-content;
+    margin: 0 30px;
+}
+
+#navbar {
+    display: flex;
+    background: transparent;
+    color: white;
+    align-items: center;
+}
+
+section .elements-section {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    padding-right: 200px;
+}
+
+section .elements-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+section .elements-section p {
+    font-size: 2rem;
+    text-align: center;
+}  
+
+#first-section {
+    background-image: url(/img/new_background.png);
+    color: white;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 130px;
+    padding: 15px 0 15px 50px;
+}
+
+/* Corps de page */
+
+/* A PROPOS DE MOI */
+#about {
+    padding: 5rem 0;
+    background: white;
+    color: black;
+}
+
+#about h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.presentation {
+    padding-top: 70px;
+    max-width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.photo_profil {
+    max-width: 400px;
+    padding-left: 150px;
+}
+
+.description {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.description p {
+    max-width: 400px;
+    font-size: 1.2rem;
+    line-height: 30px; 
+}
+
+/* COMPETENCES */
+#competences {
+    padding: 5rem 0;
+    background: black;
+    color: white;
+}
+
+#competences h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 70px;
+}
+
+.cards img {
+    width: 80px;
+    padding-bottom: 10px;
+}
+
+#icons-container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 75px;
+}
+
+/* PORTFOLIO */
+#portfolio {
+    margin: 5%;
+}
+
+#portfolio h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    padding-bottom: 50px;
+    font-weight: bold;
+}
+
+/* Contact */
+#contact h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    padding-bottom: 50px;
+}
+
+#contact {
+    padding: auto;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    background: black;
+    color: white;
+}
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icons-contact {
+    width: 80px;
+}
+
+.icons-contact img {
+    width: 50px;
+}
+
+#contact p {
+    text-align: center;
+    padding-top: 50px;
+}
