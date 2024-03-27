@@ -95,6 +95,7 @@ section .elements-section p {
     background-image: url(new_background.png);
     color: white;
     min-height: 100vh;
+    background-size: 120%;
 }
 
 .logo {
@@ -127,6 +128,7 @@ section .elements-section p {
 .photo_profil {
     max-width: 25rem;
     padding-left: 150px;
+    filter: drop-shadow(15px 10px 0.5rem black);
 }
 
 .description {
@@ -359,5 +361,17 @@ section .elements-section p {
         background-position: 30% 65%;
         color: white;
         min-height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    section .elements-section {
+        height: 43.75rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: end;
+        padding-right: 270px;
+        padding-top: 15%;
     }
 }
