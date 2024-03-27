@@ -92,7 +92,7 @@ section .elements-section p {
 }  
 
 #first-section {
-    background-image: url(/img/new_background.png);
+    background-image: url(new_background.png);
     color: white;
     min-height: 100vh;
 }
@@ -354,7 +354,7 @@ section .elements-section p {
     }
 
     #first-section {
-        background-image: url(/img/new_background.png);
+        background-image: url(new_background.png);
         background-size: 400%;
         background-position: 30% 65%;
         color: white;
