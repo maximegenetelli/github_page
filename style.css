@@ -42,13 +42,42 @@ header nav li {
     align-items: center;
 }
 
+.animation {
+    position: relative;
+}
+
+.animation::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background:
+    linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.animation:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 section .elements-section {
-    height: 700px;
+    height: 43.75rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: end;
-    padding-right: 200px;
+    padding-right: 120px;
 }
 
 section .elements-section h1 {
@@ -63,7 +92,7 @@ section .elements-section p {
 }  
 
 #first-section {
-    background-image: url(new_background.png);
+    background-image: url(/img/new_background.png);
     color: white;
     min-height: 100vh;
 }
@@ -96,7 +125,7 @@ section .elements-section p {
 }
 
 .photo_profil {
-    max-width: 400px;
+    max-width: 25rem;
     padding-left: 150px;
 }
 
@@ -107,7 +136,7 @@ section .elements-section p {
 }
 
 .description p {
-    max-width: 400px;
+    max-width: 25rem;
     font-size: 1.2rem;
     line-height: 30px; 
 }
@@ -165,7 +194,6 @@ section .elements-section p {
 }
 
 #contact {
-    padding: auto;
     padding-top: 25px;
     padding-bottom: 5px;
     background: black;
@@ -188,4 +216,148 @@ section .elements-section p {
 #contact p {
     text-align: center;
     padding-top: 50px;
+}
+
+.hamburger {
+    display: none;
+    width: 50px;
+}
+
+/* Partie responsive */
+@media only screen and (max-width: 981px) {
+    /* Menu hamburger */
+    ul li {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+        align-items: center;
+        margin: 0 30px;
+    }
+    /* About */
+    .presentation {
+        padding-top: 60px;
+        max-width: 80%;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .photo_profil {
+        max-width: 23rem;
+        padding-left: 120px;
+    }
+    
+    .description {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+    
+    .description p {
+        width: 25rem;
+        font-size: 1.2rem;
+        line-height: 30px; 
+    }    
+}
+
+@media only screen and (max-width: 768px) {
+    .presentation {
+        padding-top: 60px;
+        max-width: 80%;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .photo_profil {
+        max-width: 20rem;
+        padding-left: 120px;
+    }
+    
+    .description {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+    }
+    
+    .description p {
+        width: 20rem;
+        font-size: 1rem;
+        line-height: 30px; 
+    }    
+}
+
+@media only screen and (max-width: 480px) {
+    .hamburger {
+        display: flex;
+        align-items: center;
+        margin: 0 40px;
+    }
+
+    .elements-section {
+        padding-top: 30%;
+    }
+
+    section .elements-section h1 {
+        font-size: 3rem;
+    }
+
+    section .elements-section p {
+        font-size: 1.5rem;
+    }
+
+    .gros-titre {
+        padding-left: 50%;
+        text-align: center;
+    }
+
+    .text-accueil {
+        padding-left: 40%;
+    }
+
+    .logo {
+        width: 110px;
+        padding: 15px 0 15px 30px;
+    }
+
+    .cards img {
+        width: 50px;
+        padding-bottom: 10px;
+    }
+
+    .presentation {
+        padding-top: 70px;
+        max-width: 100%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .photo_profil {
+        max-width: 15rem;
+        padding-left: 0;
+    }
+    
+    .description {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    
+    .description p {
+        max-width: 20rem;
+        font-size: 1rem;
+        line-height: 30px; 
+    }
+
+    #first-section {
+        background-image: url(/img/new_background.png);
+        background-size: 400%;
+        background-position: 30% 65%;
+        color: white;
+        min-height: 100vh;
+    }
 }
