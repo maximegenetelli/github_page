@@ -6,3 +6,10 @@ document.addEventListener("scroll", function(){
         header.style.backgroundColor="transparent";
     }
 })
+
+const menuHamburger = document.querySelector(".hamburger")
+        
+        menuHamburger.addEventListener('click', function() {
+            const navbar = document.querySelector("#navbar")
+            navbar.classList.toggle('mobile-menu')
+        });

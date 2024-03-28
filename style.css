@@ -228,15 +228,51 @@ section .elements-section p {
 /* Partie responsive */
 @media only screen and (max-width: 981px) {
     /* Menu hamburger */
-    ul li {
-        display: none;
+    header nav ul {
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     
     .hamburger {
-        display: flex;
+        display: block;
         align-items: center;
-        margin: 0 30px;
+        position: absolute;
+        right: 35px;
+        top: 35px;
+        cursor: pointer;
     }
+    
+    
+
+    .hamburger {
+        display: block;
+    }
+
+    #navbar ul {
+        background: #597081;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+
+    #navbar {
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    #navbar ul li {
+        margin: 25px 0;
+        font-size: 2rem;
+    }
+
+    #navbar.mobile-menu{
+        margin-left: 50%;
+    }
+
     /* About */
     .presentation {
         padding-top: 60px;
@@ -290,12 +326,6 @@ section .elements-section p {
 }
 
 @media only screen and (max-width: 480px) {
-    .hamburger {
-        display: flex;
-        align-items: center;
-        margin: 0 40px;
-    }
-
     .elements-section {
         padding-top: 30%;
     }
@@ -361,6 +391,28 @@ section .elements-section p {
         background-position: 30% 65%;
         color: white;
         min-height: 100vh;
+    }
+
+    #navbar ul {
+        background: #597081;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        width: 50%;
+    }
+
+    #navbar {
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    #navbar ul li {
+        margin: 25px 0;
+        font-size: 2rem;
+    }
+
+    #navbar.mobile-menu{
+        margin-left: 50%;
     }
 }
 
